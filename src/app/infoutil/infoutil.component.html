@@ -1,0 +1,15 @@
+
+    <div class="bg-dark text-secondary px-4 py-5 text-center" id="hanging-icons">
+      <h2 class="display-5 fw-bold text-white">Info útil</h2>
+      <div class="row g-4 py-5 row-cols-1 row-cols-sm-2 row-cols-lg-3" *ngFor="let info of infoUtilOrdenada">
+            <div class="container">
+              <h2 class="fw-bold text-white">{{info.nombre}}</h2>
+            <a href="{{info.direGoogle}}" class="btn btn-outline-info btn-lg px-4 me-3 my-3 fw-bold">
+              <i class="pi pi-map-marker" style="font-size: 1.4rem"></i> {{info.dire}}
+            </a>
+            <a href="{{info.telefono}}" class="btn btn-outline-warning btn-lg px-4 me-3 fw-bold">
+              Teléfono
+            </a>
+            </div>
+      </div>
+    </div>
