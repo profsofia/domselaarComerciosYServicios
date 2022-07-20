@@ -16,7 +16,7 @@ export class ServiciosComponent implements OnInit {
     {
       nombre: 'Electricista',
       datos: [
-        { name: 'Matías Pereyra (Moroco)', tel: 'https://wa.me/549112224463920' }
+        { name: 'Matías Pereyra (Moroco)', tel: 'https://wa.me/5492224463920' }
       ],
     },
     {
@@ -28,7 +28,7 @@ export class ServiciosComponent implements OnInit {
     { nombre: 'Jardinero', telefono: 'https//' },
     { nombre: 'Gasista', telefono: 'https//' },
     { nombre: 'Mecánico', datos: [
-      { name: 'Cristian Corigliano (Muy Recomendado)',img:"https://res.cloudinary.com/sofiaschenone/image/upload/v1658280763/Domselaar/WhatsApp_Image_2022-07-19_at_3.46.05_PM_1_njhecx.jpg",dire:"La plata 462", tel: 'https://wa.me/5491140492204' }
+      { name: 'Cristian Corigliano',recomendacion:"(Muy Recomendado)",img:"https://res.cloudinary.com/sofiaschenone/image/upload/v1658280763/Domselaar/WhatsApp_Image_2022-07-19_at_3.46.05_PM_1_njhecx.jpg",dire:"La plata 462", tel: 'https://wa.me/5491140492204' }
     ]},
     { nombre: 'Bicicletero', telefono: 'https//' },
     { nombre: 'Refrigeración', datos: [
@@ -44,10 +44,10 @@ export class ServiciosComponent implements OnInit {
     { nombre: 'Empleada doméstica', telefono: 'https//' },
     { nombre: 'Niñera', telefono: 'https//' },
     { nombre: 'Veterinario',datos: [
-      { name: 'Del Sol', tel: '', dire: 'Manuel Belgrano y Teniente Origone', direServicioEnGoogle:"https://goo.gl/maps/AqxzFqVcNyHh8cgv6"}
+      { name: 'Del Sol', tel: '', dire: 'Manuel Belgrano',text:"y Teniente Origone", direServicioEnGoogle:"https://goo.gl/maps/AqxzFqVcNyHh8cgv6"}
     ]},
     { nombre: 'Abogado', datos: [
-      { name: 'Estudio Jurídico Cabral y Asociados', tel: 'https://wa.me/54911642684300', dire:'Storni 123', direServicioEnGoogle:"https://goo.gl/maps/AqxzFqVcNyHh8cgv6"}
+      { name: 'Estudio Jurídico Cabral y Asociados', numero:"11-6426-84300", dire:'Storni 123', direServicioEnGoogle:"https://goo.gl/maps/AqxzFqVcNyHh8cgv6"}
     ]},
   ];
   valoresOrdenados: any[] = [];

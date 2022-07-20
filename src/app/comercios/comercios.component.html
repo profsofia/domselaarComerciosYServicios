@@ -1,24 +1,28 @@
-<div class="px-4 py-5 bg-dark text-secondary text-center px-4 py-5" id="featured-3">
+<div class="bg-dark text-secondary text-center px-4" id="featured-3">
   <h2 class="display-5 fw-bold text-white">Comercios</h2>
-  <div class="row g-4 py-5 row-cols-1 row-cols-sm-2 row-cols-lg-3">
+  <div class="row g-col-4 py-5 row-cols-1 row-cols-sm-2 row-cols-lg-3">
     <div class="feature col text-white" *ngFor="let item of comerciosOrdenados">
 
       <h2>{{item.nombreComercio}}</h2>
-      <div class="dropdown" >
-        <button class="btn btn-outline-info btn-lg px-4 me-sm-3 fw-bold dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+      <div class="dropdown">
+        <button class="btn btn-outline-info btn-lg px-4 fw-bold dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
           Ver todos
         </button>
         <ul class="dropdown-menu bg-dark text-white" aria-labelledby="dropdownMenuButton1">
-          <li *ngFor="let i of item.datosComercio" class="dropdown-item bg-dark te">
-            <h3 class="bg-dark text-white">
+          <li *ngFor="let i of item.datosComercio" class="dropdown-item" width="380px;">
+            <h4 class="bg-dark text-white">
               {{i.nameComer}}
-            </h3>
-            <h4 class="bg-dark text-white" *ngIf="i.tel">{{i.tel}}</h4>
-            <a *ngIf="i.telComer" class="btn-outline-info btn-lg" href="{{i.telComer}}"><i class="pi pi-whatsapp"  target="_blank" style="font-size: 1.7rem"></i> Teléfono</a>
-
-            <a *ngIf="i.direComercioGoogle" class="btn-outline-info btn-lg" href="{{i.direComercioGoogle}}" target="_blank" icon="pi pi-map-marker" style="font-size: 1.7rem">
-              <i *ngIf="i.direComercio" class="pi pi-map-marker" style="font-size: 1.4rem">{{i.direComercio}}</i>
+            </h4>
+            <h5 class="bg-dark text-white" *ngIf="i.tel">{{i.tel}}</h5>
+            <h6 class="text-white-50">
+              <a *ngIf="i.telComer" class="btn-outline-info btn-lg" href="{{i.telComer}}"><i class="pi pi-whatsapp"  target="_blank" style="font-size: 1.6rem"></i> Teléfono</a>
+               <br/>
+            <a *ngIf="i.direComercioGoogle" class="btn-outline-info" href="{{i.direComercioGoogle}}" target="_blank" style="font-size: 1.6rem">
+              <p *ngIf="i.direComercio" style="font-size: 1.4rem"><i class="pi pi-map-marker" style="font-size: 1.4rem"></i>{{i.direComercio}}</p>
+              <p *ngIf="i.text" style="font-size: 1.4rem">{{i.text}}</p>
             </a>
+            </h6>
+            <hr/>
           </li>
         </ul>
       </div>

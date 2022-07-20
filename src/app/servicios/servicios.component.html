@@ -1,10 +1,10 @@
-<div class="container px-4 py-5" id="hanging-icons">
+<div class="px-4 py-5" id="hanging-icons">
   <h2 class="pb-2 border-bottom fw-bold text-white">Servicios</h2>
   <div class="row g-4 py-5 row-cols-1 row-cols-sm-2  row-cols-lg-3">
 
     <div class="col d-flex align-items-start text-white" *ngFor="let n of valoresOrdenados">
-      <div>
-        <h2>{{n.nombre}}</h2>
+        <div>
+          <h2>{{n.nombre}}</h2>
         <div class="dropdown" >
           <button class="btn btn-outline-info btn-lg px-4 me-sm-3 fw-bold dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
             Ver todos
@@ -12,194 +12,23 @@
           <ul class="dropdown-menu bg-dark text-white" aria-labelledby="dropdownMenuButton1">
             <li *ngFor="let i of n.datos" class="dropdown-item bg-dark text-white">
               <img class="rounded-circle" height="150px" width="150px" *ngIf="i.img" src="https://res.cloudinary.com/sofiaschenone/image/upload/v1658280763/Domselaar/WhatsApp_Image_2022-07-19_at_3.46.05_PM_1_njhecx.jpg" alt="imagen mecánico domselaar">
-              <h3 class="bg-dark text-white">
-                {{i.name}}
-              </h3>
-              <a class="btn-outline-info btn-lg" href="{{i.tel}}"><i class="pi pi-whatsapp"  target="_blank" style="font-size: 1.7rem"></i> Teléfono</a>
-              <a class="btn-outline-info btn-lg" *ngIf="i.dire" href="{{i.direServicioEnGoogle}}" target="_blank" icon="pi pi-map-marker" style="font-size: 1.7rem">
-                <i class="pi pi-map-marker" style="font-size: 1.4rem">{{i.dire}}</i>
-              </a>
+              <h5 class="bg-dark text-white">
+                {{i.name}} <br> <p *ngIf="i.recomendacion"> <i class="pi pi-star-fill"><i class="pi pi-star-fill"></i><i class="pi pi-star-fill"></i><i class="pi pi-star-fill"></i><i class="pi pi-star-fill"></i> {{i.recomendacion}}</i></p>
+              </h5>
+                <a *ngIf="i.tel" class="btn-outline-info btn-lg" href="{{i.tel}}"><i class="pi pi-whatsapp"  target="_blank" style="font-size: 1.7rem"></i> Teléfono</a>
+                <a class="btn-outline-info btn-lg" *ngIf="i.numero" style="font-size: 1.7rem">{{i.numero}}</a>
+                <a class="btn-outline-info btn-lg" *ngIf="i.dire" href="{{i.direServicioEnGoogle}}" target="_blank" icon="pi pi-map-marker" style="font-size: 1.7rem">
+                  <div>
+                    <i class="pi pi-map-marker" style="font-size: 1.4rem">{{i.dire}}</i>
+                    <p  *ngIf="i.text" style="font-size: 1.4rem"> {{i.text}}</p>
+                  </div>
+                </a>
             </li>
           </ul>
         </div>
+        </div>
 
-      </div>
     </div>
-
-    <!--
-    <div class="col d-flex align-items-start">
-
-      <div>
-        <h2>Pocero</h2>
-        <a href="#" class="btn btn-dark btn-outline-light btn-outline-light">
-          Primary button
-        </a>
-      </div>
-    </div>
-    <div class="col d-flex align-items-start">
-
-      <div>
-        <h2>Jardinero</h2>
-        <a href="#" class="btn btn-dark btn-outline-light btn-outline-light">
-          Primary button
-        </a>
-      </div>
-    </div>
-    <div class="col d-flex align-items-start">
-
-      <div>
-        <h2>Gasista</h2>
-        <a href="#" class="btn btn-dark btn-outline-light btn-outline-light">
-          Primary button
-        </a>
-      </div>
-    </div>
-    <div class="col d-flex align-items-start">
-
-      <div>
-        <h2>Mecánico</h2>
-        <a href="#" class="btn btn-dark btn-outline-light btn-outline-light">
-          Primary button
-        </a>
-      </div>
-    </div>
-    <div class="col d-flex align-items-start">
-
-      <div>
-        <h2>Bicicletero</h2>
-        <a href="#" class="btn btn-dark btn-outline-light btn-outline-light">
-          Primary button
-        </a>
-      </div>
-    </div>
-    <div class="col d-flex align-items-start">
-
-      <div>
-        <h2>Refrigeración</h2>
-        <a href="#" class="btn btn-dark btn-outline-light btn-outline-light">
-          Primary button
-        </a>
-      </div>
-    </div>
-    <div class="col d-flex align-items-start">
-
-      <div>
-        <h2>Carpintero</h2>
-        <a href="#" class="btn btn-dark btn-outline-light btn-outline-light">
-          Primary button
-        </a>
-      </div>
-    </div>
-    <div class="col d-flex align-items-start">
-
-      <div>
-        <h2>Herrero</h2>
-        <a href="#" class="btn btn-dark btn-outline-light btn-outline-light">
-          Primary button
-        </a>
-      </div>
-    </div>
-    <div class="col d-flex align-items-start">
-
-      <div>
-        <h2>Plomero</h2>
-        <a href="#" class="btn btn-dark btn-outline-light btn-outline-light">
-          Primary button
-        </a>
-      </div>
-    </div>
-    <div class="col d-flex align-items-start">
-
-      <div>
-        <h2>Ceramísta</h2>
-        <a href="#" class="btn btn-dark btn-outline-light btn-outline-light">
-          Primary button
-        </a>
-      </div>
-    </div>
-    <div class="col d-flex align-items-start">
-
-      <div>
-        <h2>Pintor</h2>
-        <a href="#" class="btn btn-dark btn-outline-light btn-outline-light">
-          Primary button
-        </a>
-      </div>
-    </div>
-    <div class="col d-flex align-items-start">
-
-      <div>
-        <h2>Profesor particular</h2>
-        <a href="#" class="btn btn-dark btn-outline-light">
-          Primary button
-        </a>
-      </div>
-    </div>
-    <div class="col d-flex align-items-start">
-
-      <div>
-        <h2>Corralón</h2>
-        <a href="#" class="btn btn-dark btn-outline-light">
-          Primary button
-        </a>
-      </div>
-    </div>
-    <div class="col d-flex align-items-start">
-
-      <div>
-        <h2>Masajista</h2>
-        <a href="#" class="btn btn-dark btn-outline-light">
-          Primary button
-        </a>
-      </div>
-    </div>
-    <div class="col d-flex align-items-start">
-
-      <div>
-        <h2>Empleada doméstica</h2>
-        <a href="#" class="btn btn-dark btn-outline-light">
-          Primary button
-        </a>
-      </div>
-    </div>
-    <div class="col d-flex align-items-start">
-
-      <div>
-        <h2>Niñera</h2>
-        <a href="#" class="btn btn-dark btn-outline-light">
-          Primary button
-        </a>
-      </div>
-    </div>
-    <div class="col d-flex align-items-start">
-
-      <div>
-        <h2>Veterinario</h2>
-        <a href="#" class="btn btn-dark btn-outline-light">
-          Primary button
-        </a>
-      </div>
-    </div>
-    <div class="col d-flex align-items-start">
-
-      <div>
-        <h2>Abogado</h2>
-        <a href="#" class="btn btn-dark btn-outline-light">
-          Primary button
-        </a>
-      </div>
-    </div>
-    <div class="col d-flex align-items-start">
-
-      <div>
-        <h2>Seguro</h2>
-        <a href="#" class="btn btn-dark btn-outline-light">
-          Primary button
-        </a>
-      </div>
-    </div>
-    -->
-
   </div>
 </div>
 

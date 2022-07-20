@@ -28,7 +28,7 @@ export class ComerciosComponent implements OnInit {
 
 
     {nombreComercio:"Forrajeria y Mascotas", datosComercio:
-    [{nameComer:"Forrajería Méndez",tel:"2224496248",direComercio:"Artigas y Teniente Origone",direComercioGoogle:"https://maps.app.goo.gl/xNmtrLhnqTST4AES6", telComer:"https://wa.me/5492224496248"},
+    [{nameComer:"Forrajería Méndez",tel:"2224496248",direComercio:"Artigas y ",text:"Teniente Origone",direComercioGoogle:"https://maps.app.goo.gl/xNmtrLhnqTST4AES6", telComer:"https://wa.me/5492224496248"},
     {nameComer:"Forrajería La Huella",direComercio:"Av San Martín 119",direComercioGoogle:"https://maps.app.goo.gl/eeMXPgesz5dPY4hY9"},
     {nameComer:"Guardería Canina Brisa",direComercio:"Echeverría 70",tel:"1168137111", telComer:"https://wa.me/5491168137111"}
   ]},
