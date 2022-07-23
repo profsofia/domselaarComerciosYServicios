@@ -23,7 +23,7 @@ export class ComerciosComponent implements OnInit {
   ]},
 
     {nombreComercio:"Mercado mayorista", datosComercio:
-    [{nameComer:"San Gerónimo",direComercio:"Ruta 210 y Pratts",direComercioGoogle:"https://maps.app.goo.gl/xaodGiwcpj5VkLJ98"}
+    [{nameComer:"San Gerónimo",direComercio:"Ruta 210 y Pratts",telComer:"https://wa.me/5491133151845", tel:"11 3315 1845",direComercioGoogle:"https://maps.app.goo.gl/xaodGiwcpj5VkLJ98"}
   ]},
 
 
@@ -44,11 +44,11 @@ export class ComerciosComponent implements OnInit {
 
 
     {nombreComercio:"Internet y Cable",datosComercio:
-    [{nameComer:"Video Cable Domselaar(NO Recomendado )",direComercio:"Laprida 135",direComercioGoogle:"https://maps.app.goo.gl/NWKtJsdSLYMfpSx6A", telComer:"https://wa.me/5492225491360", tel:"02225 49-1360"}] },
+    [{nameComer:"Video Cable Domselaar",direComercio:"Laprida 135",direComercioGoogle:"https://maps.app.goo.gl/NWKtJsdSLYMfpSx6A", telComer:"https://wa.me/5492225491360", tel:"02225 49-1360"}] },
 
 
     {nombreComercio:"Granja" , datosComercio:
-    [{nameComer:"Vikingo Granja Natural(Recomendado)",direComercio:"Nicaragua 1503",direComercioGoogle:"https://maps.app.goo.gl/MQ4GEWzrFFZiTjhg6", telComer:"https://wa.me/5491122159631", tel:"1122159631"}]},
+    [{nameComer:"Vikingo Granja Natural",parrafo:"(Recomendado)",direComercio:"Nicaragua 1503",direComercioGoogle:"https://maps.app.goo.gl/MQ4GEWzrFFZiTjhg6", telComer:"https://wa.me/5491122159631", tel:"1122159631"}]},
 
 
     {nombreComercio:"Verdulería",datosComercio:
@@ -84,7 +84,7 @@ export class ComerciosComponent implements OnInit {
     {nombreComercio:"Ferretería", datosComercio:[{nameComer:"La Plaza",direComercio:"Manuel Belgrano y Teniente Origone",direComercioGoogle:"https://goo.gl/maps/bQrGf8mFhTnyNy968", telComer:"https://wa.me/5492224536419", tel:"2224536419"},{
       nameComer:"La Barrera",direComercio:"Teniente Origone y 9 de Julio",direComercioGoogle:"https://goo.gl/maps/rAcRHtLAeNmPMaqF7"
     },
-    {nameComer:"Electricidad Domselaar. Mercado de Materiales(Recomendado)",direComercio:"Juan B Justo 134",direComercioGoogle:"https://maps.app.goo.gl/xdYy5TXy1MJLxyyf8", telComer:"https://wa.me/5492223671709", tel:"2223671709"}
+    {nameComer:"Electricidad Domselaar.",parrafo:" Mercado de Materiales(Recomendado)",direComercio:"Juan B Justo 134",direComercioGoogle:"https://maps.app.goo.gl/xdYy5TXy1MJLxyyf8", telComer:"https://wa.me/5492223671709", tel:"2223671709"}
 
   ]},
     {nombreComercio:"Cerámica",datosComercio:[{nameComer:"DOMcerámicos",direComercio:"Belgrano Entre Mitre y Sarmiento",direComercioGoogle:"https://goo.gl/maps/RZ5HwkjAuc9JMq2A6", telComer:"https://wa.me/5491132710310", tel:"1132710310"}] },

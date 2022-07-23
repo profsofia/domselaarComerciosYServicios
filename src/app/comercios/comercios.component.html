@@ -14,13 +14,14 @@
             <h4 class="text-dark">
               {{i.nameComer}}
             </h4>
-            <h5 class="text-dark" *ngIf="i.tel">{{i.tel}}</h5>
-              <a *ngIf="i.telComer" class="btn-outline-info btn-lg" href="{{i.telComer}}"><i class="pi pi-whatsapp"  target="_blank" style="font-size: 1.6rem"></i> Teléfono</a>
+            <p class="fs-6">{{i.parrafo}}</p>
+            <p class="text-dark fs-6 p-0 m-0" *ngIf="i.tel">{{i.tel}}</p>
+              <a *ngIf="i.telComer" class="btn-outline-info btn-lg p-0 m-0" href="{{i.telComer}}"><i class="pi pi-whatsapp"  target="_blank" style="font-size: 1.2rem"></i> Teléfono</a>
                <br/>
-            <a *ngIf="i.direComercioGoogle" class="btn-outline-info" href="{{i.direComercioGoogle}}" target="_blank" style="font-size: 1.6rem">
-              <p *ngIf="i.direComercio" style="font-size: 1.4rem"><i class="pi pi-map-marker" style="font-size: 1.4rem"></i>{{i.direComercio}}</p>
+            <a *ngIf="i.direComercioGoogle" class="btn-outline-info p-0 m-0" href="{{i.direComercioGoogle}}" target="_blank" style="font-size: 1.6rem">
+              <p class="fs-6" *ngIf="i.direComercio" style="font-size: 1.4rem"><i class="pi pi-map-marker" style="font-size: 1.4rem"></i>{{i.direComercio}}</p>
             </a>
-            <p *ngIf="i.text" style="font-size: 1.4rem">{{i.text}}</p>
+            <p class="fs-6" *ngIf="i.text" style="font-size: 1.4rem">{{i.text}}</p>
             <hr/>
           </li>
         </ul>

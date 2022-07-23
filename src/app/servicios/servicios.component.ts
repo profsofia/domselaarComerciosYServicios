@@ -48,7 +48,7 @@ export class ServiciosComponent implements OnInit {
       { name: 'Del Sol', tel: '', dire: 'Manuel Belgrano',text:"y Teniente Origone", direServicioEnGoogle:"https://goo.gl/maps/AqxzFqVcNyHh8cgv6"}
     ]},
     { nombre: 'Abogado', datos: [
-      { name: 'Marcela Liliana Ramírez', recomendacion:"Abogada especialista en cuestiones de Familia.", numero:"11-57956492",tel:"https://wa.me/5491157956492", dire:'Calle Córdoba 225', direServicioEnGoogle:"https://goo.gl/maps/LHnC5ryAZ2tW3dAU6"},
+      { name: 'Marcela Liliana Ramírez', parrafo:"Abogada especialista en cuestiones de Familia.", numero:"11-57956492",tel:"https://wa.me/5491157956492", dire:'Calle Córdoba 225', direServicioEnGoogle:"https://goo.gl/maps/LHnC5ryAZ2tW3dAU6"},
       { name: 'Estudio Jurídico Cabral y Asociados', numero:"11-6426-84300",tel:"https://wa.me/54911642684300", dire:'Storni 123', direServicioEnGoogle:"https://goo.gl/maps/AqxzFqVcNyHh8cgv6"}
     ]},
 

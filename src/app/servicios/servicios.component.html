@@ -13,11 +13,13 @@
             <li *ngFor="let i of n.datos" class="dropdown-item bg-dark text-white">
               <img class="rounded-circle" height="150px" width="150px" *ngIf="i.img" src="{{i.img}}" alt="imagen mecánico domselaar">
               <h5 class="bg-dark text-white">
-                {{i.name}} <br> <p *ngIf="i.recomendacion"> <i class="pi pi-star-fill"><i class="pi pi-star-fill"></i><i class="pi pi-star-fill"></i><i class="pi pi-star-fill"></i><i class="pi pi-star-fill"></i> {{i.recomendacion}}</i></p>
+                {{i.name}} <br>
+                <p class="fs-6 p-0 m-0" *ngIf="i.parrafo">{{i.parrafo}}</p>
+                <p *ngIf="i.recomendacion"> <i class="pi pi-star-fill"><i class="pi pi-star-fill"></i><i class="pi pi-star-fill"></i><i class="pi pi-star-fill"></i><i class="pi pi-star-fill"></i> {{i.recomendacion}}</i></p>
               </h5>
-              <h5 class="bg-dark text-white" *ngIf="i.numero">{{i.numero}}</h5>
-                <a *ngIf="i.tel" class="btn-outline-info btn-lg" href="{{i.tel}}"><i class="pi pi-whatsapp"  target="_blank" style="font-size: 1.6rem"></i> Teléfono</a>
-                <a class="btn-outline-info btn-lg" *ngIf="i.direServicioEnGoogle" href="{{i.direServicioEnGoogle}}" target="_blank" icon="pi pi-map-marker" style="font-size: 1.7rem">
+              <h5 class="bg-dark text-white fs-6" *ngIf="i.numero">{{i.numero}}</h5>
+                <a *ngIf="i.tel" class="btn-outline-info btn-lg fs-6" href="{{i.tel}}"><i class="pi pi-whatsapp"  target="_blank" style="font-size: 1.5rem"></i> Teléfono</a>
+                <a class="fs-6 btn-outline-info btn-lg" *ngIf="i.direServicioEnGoogle" href="{{i.direServicioEnGoogle}}" target="_blank" icon="pi pi-map-marker" style="font-size: 1.7rem">
                   <i class="pi pi-map-marker" style="font-size: 1.4rem">{{i.dire}}</i>
                   <br>
                     <p  *ngIf="i.text" style="font-size: 1.4rem"> {{i.text}}</p>
