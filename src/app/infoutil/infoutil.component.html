@@ -1,15 +1,39 @@
-
-    <div class="bg-dark mx-auto text-secondary px-4 py-5 text-center" id="hanging-icons">
-      <h2 class="display-5 fw-bold text-white">Info útil</h2>
-      <div class="row g-4 py-5 row-cols-1 row-cols-sm-2 row-cols-lg-3" *ngFor="let info of infoUtilOrdenada">
-            <div class="container">
-              <h2 class="fw-bold text-white">{{info.nombre}}</h2>
-            <a href="{{info.direGoogle}}" class="btn btn-outline-info btn-lg px-4 me-3 my-3 fw-bold">
-              <i class="pi pi-map-marker" style="font-size: 1.4rem"></i> {{info.dire}}
-            </a>
-            <a href="{{info.telefono}}" class="btn btn-outline-warning btn-lg px-4 me-3 fw-bold">
-              Teléfono
-            </a>
-            </div>
+<div
+  class="bg-dark mx-auto text-secondary px-4 py-5 text-center"
+  id="hanging-icons"
+>
+  <h2 class="display-5 fw-bold text-white">Info útil</h2>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-md-4 py-2 " *ngFor="let info of infoUtilOrdenada">
+      <div class="card" style="height:520px;">
+        <img
+          class="card-img-top"
+          style="max-width: 540px; max-height: 300px;"
+          *ngIf="info.imagenes"
+          src="{{ info.imagenes }}"
+          alt="Card image cap"
+        />
+        <div class="card-body">
+          <h5 class="card-title">{{ info.nombre }}</h5>
+          <p class="card-text" *ngIf="info.telver">{{ info.telver }}</p>
+          <a
+            href="{{ info.direGoogle }}"
+            class="btn btn-outline-info btn-lg px-4 me-3 my-3 fw-bold"
+          >
+            <i class="pi pi-map-marker" style="font-size: 1.4rem"></i>
+            {{ info.dire }}
+          </a>
+          <a
+          *ngIf="info.telefono"
+            href="{{ info.telefono }}"
+            class="btn btn-outline-warning btn-lg px-4 me-3 fw-bold"
+          >
+            <i class="pi pi-phone" style="font-size: 1.4rem"></i> Teléfono</a
+          >
+        </div>
       </div>
     </div>
+  </div>
+</div>

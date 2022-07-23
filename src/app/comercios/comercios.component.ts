@@ -67,6 +67,9 @@ export class ComerciosComponent implements OnInit {
 
 
     {nombreComercio:"Vivero", datosComercio:[{nameComer:"Vivero Bell Giardino",direComercio:"Alfonsina Storni y Prats",direComercioGoogle:"https://goo.gl/maps/Lv5n3eNWp4FKqQfe9", telComer:"https://wa.me/5491150133254", tel:"1150133254"},
+
+    {nameComer:"Macetas Villalba Domselaar",direComercio:"Chacabuco 846",direComercioGoogle:"https://goo.gl/maps/gY7P8a9YH9Ygbwcw8", telComer:"https://wa.me/5491150368315", tel:"11 5036 8315"},
+
     {nameComer:"Vivero El Tano Bondiola",direComercio:"Lavalle",direComercioGoogle:"https://goo.gl/maps/SSqLPwEYNcSNepAE9", telComer:"https://wa.me/5491127433116", tel:"1127433116"}
   ]},
 
@@ -96,15 +99,16 @@ export class ComerciosComponent implements OnInit {
 
 
     {nombreComercio:"Casa de Pezca", datosComercio:[{nameComer:"Lo de Bigote JD",direComercio:"RUTA 210, Pedro Peralta, 9 de Julio",direComercioGoogle:"https://g.page/LODEBIGOTEJDDOMSELAAR?share", telComer:"https://wa.me/5492223422203", tel:"2223422203"}]},
+
+
     {nombreComercio:"Maderera", datosComercio:[{nameComer:"Maderas Domselaar",direComercio:"RP210",direComercioGoogle:"https://goo.gl/maps/YFZEfxaxTUJtaLKE6", telComer:"https://wa.me/5491124477819", tel:"1124477819"},
     {nameComer:"Maderas Domselaar",direComercio:"RP210",direComercioGoogle:"https://goo.gl/maps/YFZEfxaxTUJtaLKE6", telComer:"https://wa.me/5491124477819", tel:"1124477819"}
 
   ] },
-    {nombreComercio:"Leña y Carbón"},
+    {nombreComercio:"Leña y Carbón", datosComercio:[{nameComer:"Leñera El pipi",direComercio:"Alem 250",direComercioGoogle:"https://goo.gl/maps/8k1NbUW39K823FaG8", telComer:"https://wa.me/5492224551175", tel:"+54 9 2224 55 1175", imagenes:"https://res.cloudinary.com/sofiaschenone/image/upload/v1658528206/Domselaar/lena_kwf0ux.png"}]},
     {nombreComercio:"Gomería"},
     {nombreComercio:"Lavadero de autos"},
     {nombreComercio:"Lavadero de ropa"},
-    {nombreComercio:"El castillo"},
 
 
     {nombreComercio:"Peluquería",datosComercio:[{nameComer:"Peluquería Unisex",direComercio:"Chacabuco 113",direComercioGoogle:"https://goo.gl/maps/AMythynP1CTqv7bd6", telComer:"https://wa.me/5491122796775", tel:"1122796775"}]},
@@ -121,8 +125,10 @@ export class ComerciosComponent implements OnInit {
     {nameComer:"El rey de la pizza", direComercio:"Teniente Origone",direComercioGoogle:"https://maps.app.goo.gl/NFVJhGcza1ESxobu8", telComer:"https://wa.me/5492223509280", tel:"2223509280"}
   ]},
 
-    {nombreComercio:"Cervecería ",datosComercio:[{nameComer:"Sherlock",direComercio:"Bernardino Rivadavia",direComercioGoogle:"https://goo.gl/maps/dcGWimu5k6LwYNV69", telComer:"https://wa.me/5491126620781", tel:"1126620781"}]}
+    {nombreComercio:"Cervecería ",datosComercio:[{nameComer:"Sherlock",direComercio:"Bernardino Rivadavia",direComercioGoogle:"https://goo.gl/maps/dcGWimu5k6LwYNV69", telComer:"https://wa.me/5491126620781", tel:"1126620781"}]},
 
+
+    {nombreComercio:"Sodero ",datosComercio:[{nameComer:"Las 4 M (Esteban)",imagenes:"https://res.cloudinary.com/sofiaschenone/image/upload/v1658529694/Domselaar/agua_nuemzg.png",direComercio:"Florencio Sánchez 14",direComercioGoogle:"https://goo.gl/maps/Xmrn6pU5xB1BwLmP9", telComer:"https://wa.me/549115491161492507", tel:"54 9 11 6149-2507"}]}
   ];
   comerciosOrdenados: any[]=[];
 
