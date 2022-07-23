@@ -10,6 +10,7 @@ import { InicioComponent } from './inicio/inicio.component';
 import {SplitButtonModule} from 'primeng/splitbutton';
 import {TabMenuModule} from 'primeng/tabmenu';
 import { InfoutilComponent } from './infoutil/infoutil.component';
+import { NotfoundComponent } from './notfound/notfound.component';
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import { InfoutilComponent } from './infoutil/infoutil.component';
     ComerciosComponent,
     ServiciosComponent,
     InicioComponent,
-    InfoutilComponent
+    InfoutilComponent,
+    NotfoundComponent
   ],
   imports: [
     BrowserModule,

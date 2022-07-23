@@ -101,8 +101,7 @@ export class ComerciosComponent implements OnInit {
     {nombreComercio:"Casa de Pezca", datosComercio:[{nameComer:"Lo de Bigote JD",direComercio:"RUTA 210, Pedro Peralta, 9 de Julio",direComercioGoogle:"https://g.page/LODEBIGOTEJDDOMSELAAR?share", telComer:"https://wa.me/5492223422203", tel:"2223422203"}]},
 
 
-    {nombreComercio:"Maderera", datosComercio:[{nameComer:"Maderas Domselaar",direComercio:"RP210",direComercioGoogle:"https://goo.gl/maps/YFZEfxaxTUJtaLKE6", telComer:"https://wa.me/5491124477819", tel:"1124477819"},
-    {nameComer:"Maderas Domselaar",direComercio:"RP210",direComercioGoogle:"https://goo.gl/maps/YFZEfxaxTUJtaLKE6", telComer:"https://wa.me/5491124477819", tel:"1124477819"}
+    {nombreComercio:"Maderera", datosComercio:[{nameComer:"Maderas Domselaar",direComercio:"RP210",direComercioGoogle:"https://goo.gl/maps/YFZEfxaxTUJtaLKE6", telComer:"https://wa.me/5491124477819", tel:"1124477819"}
 
   ] },
     {nombreComercio:"Leña y Carbón", datosComercio:[{nameComer:"Leñera El pipi",direComercio:"Alem 250",direComercioGoogle:"https://goo.gl/maps/8k1NbUW39K823FaG8", telComer:"https://wa.me/5492224551175", tel:"+54 9 2224 55 1175", imagenes:"https://res.cloudinary.com/sofiaschenone/image/upload/v1658528206/Domselaar/lena_kwf0ux.png"}]},
