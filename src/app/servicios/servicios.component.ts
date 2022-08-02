@@ -12,7 +12,8 @@ export class ServiciosComponent implements OnInit {
       datos: [
         { name: 'Javier',recomendacion:"(Muy Recomendado)", numero: '+54 9 2224 53-0472', tel:"https://wa.me/5492224530472"},
         { name: 'Albañilería Domselaar',recomendacion:"(Julio Ponce)",img:"https://res.cloudinary.com/sofiaschenone/image/upload/v1658440347/Domselaar/bob_ozh1wy.jpg",dire:"Echeverría 250",numero:"11-26825874", tel: 'https://wa.me/5491126825874',direServicioEnGoogle:"https://goo.gl/maps/q8nytekz1Ps8cmwo6" },
-        { name: 'Gustavo',numero:"11-5978 3051", tel: 'https://wa.me/5491159783051' }
+        { name: 'Gustavo',numero:"11-5978 3051", tel: 'https://wa.me/5491159783051' },
+        { name: 'Tierra Domselaar (Ricardo)',dire:'Chaco 485',numero:"+54 9 11 3560-4259", tel: 'https://wa.me/5491135604259', img:"https://res.cloudinary.com/sofiaschenone/image/upload/v1659473979/Domselaar/tierrasdomse_jokws9.jpg" }
       ],
     },
     {
@@ -27,16 +28,19 @@ export class ServiciosComponent implements OnInit {
         { name: 'Javier',recomendacion:"(Muy Recomendado)", numero: '+54 9 2224 53-0472'},
       ],
     },
-    { nombre: 'Jardinero', telefono: 'https//' },
-    { nombre: 'Gasista', telefono: 'https//' },
+    //{ nombre: 'Jardinero', telefono: 'https//' },
+    //{ nombre: 'Gasista', telefono: 'https//' },
     { nombre: 'Mecánico', datos: [
-      { name: 'Cristian Corigliano',recomendacion:"(Muy Recomendado)",img:"https://res.cloudinary.com/sofiaschenone/image/upload/v1658280763/Domselaar/WhatsApp_Image_2022-07-19_at_3.46.05_PM_1_njhecx.jpg",dire:"La plata 462", tel: 'https://wa.me/5491140492204',direServicioEnGoogle:"https://goo.gl/maps/zcFPJAbDkcMWPdv96" }
+      { name: 'Cristian Corigliano',recomendacion:"(Muy Recomendado)",img:"https://res.cloudinary.com/sofiaschenone/image/upload/v1658280763/Domselaar/WhatsApp_Image_2022-07-19_at_3.46.05_PM_1_njhecx.jpg",dire:"La plata 462", tel: 'https://wa.me/5491140492204',direServicioEnGoogle:"https://goo.gl/maps/zcFPJAbDkcMWPdv96" },
+      { name: "Reparación de frenos y embragues Domselaar",dire:"Ruta 210 Km 56.200",numero:"011 4960-6170" }
     ]},
-    { nombre: 'Bicicletero', telefono: 'https//' },
+    //{ nombre: 'Bicicletero', telefono: 'https//' },
     { nombre: 'Refrigeración', datos: [
       { name: 'Refrigeración Daniel G', tel: 'https://wa.me/5491128422070' }
     ]},
-    { nombre: 'Carpintero', telefono: 'https//' },
+    //{ nombre: 'Carpintero', telefono: 'https//' },
+
+
     { nombre: 'Herrero',  datos: [
       { name: 'Herrería Moncho',dire:"Ruta 210km 55", numero:"1154155785",tel: 'https://wa.me/5491154155785' },
     {name:"Fabian Ponzo", numero:"1138807867", tel:"https://wa.me/5491138807867"}
@@ -44,13 +48,17 @@ export class ServiciosComponent implements OnInit {
 
 
 
-    { nombre: 'Plomero', telefono: 'https//' },
-    { nombre: 'Ceramísta', telefono: 'https//' },
-    { nombre: 'Pintor', telefono: 'https//' },
+    //{ nombre: 'Plomero', telefono: 'https//' },
+    //{ nombre: 'Ceramísta', telefono: 'https//' },
+    //{ nombre: 'Pintor', telefono: 'https//' },
+
+
     { nombre: 'Profesor particular', telefono: 'https//' },
-    { nombre: 'Masajista', telefono: 'https//' },
-    { nombre: 'Empleada doméstica', telefono: 'https//' },
-    { nombre: 'Niñera', telefono: 'https//' },
+    // { nombre: 'Masajista', telefono: 'https//' },
+    //{ nombre: 'Empleada doméstica', telefono: 'https//' },
+    //{ nombre: 'Niñera', telefono: 'https//' },
+
+
     { nombre: 'Veterinario',datos: [
       {name:"Joel", numero:" 11 6670 5067", tel:"https://wa.me/5491166705067"},
       { name: 'Del Sol', tel: '', dire: 'Manuel Belgrano',text:"y Teniente Origone", direServicioEnGoogle:"https://goo.gl/maps/AqxzFqVcNyHh8cgv6"}

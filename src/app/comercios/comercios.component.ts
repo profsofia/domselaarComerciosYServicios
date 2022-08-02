@@ -9,18 +9,25 @@ export class ComerciosComponent implements OnInit {
   comercios: any[] =[
     {nombreComercio:"Remís",
     datosComercio:[
-    { nameComer: 'Remís Domselaar', tel:"112224442977", telComer: 'https://wa.me/5492224442977', direComercio: "https://goo.gl/maps/PaXZ8mKTKJA21VCy5" }]},
+    { nameComer: 'Remís Domselaar', tel:"112224442977", telComer: 'https://wa.me/5492224442977', direComercio: "https://goo.gl/maps/PaXZ8mKTKJA21VCy5" },
+    { nameComer: 'Remís Seba Perro', tel:"+ 54 92224 54 7612", telComer: 'https://wa.me/5492224547612' },
+    { nameComer: 'Remis Ds (Carlos)', tel:"+54 91167 924079", telComer: 'https://wa.me/5491167924079'},
+    { nameComer: 'Marcos REMIS DOMSE', tel:"+54 9 11 4145-6515", telComer: 'https://wa.me/5491141456515' },
+    { nameComer: 'Remis Luis', tel:"+54 9 11 5146-7452", telComer: 'https://wa.me/5491151467452' },
+    { nameComer: 'Remis Sebastián', tel:"+54 9 11 3765-4387", telComer: 'https://wa.me/5491137654387' }
+  ]},
 
     {nombreComercio:"Almacenes y Supermercados", datosComercio:
     [{nameComer:"El Diluvio",direComercio:"San Martín y Teniente Origone",direComercioGoogle:"https://maps.app.goo.gl/uf7GsHJCUZsatSzq5"},
     {nameComer:"Supermercado Wang",direComercio:"Av San Martín y Mitre",direComercioGoogle:"https://maps.app.goo.gl/WbXE3tbdeGRtnXtv9"},
-    {nameComer:"Las Nenas",direComercio:"Benjamín Matienzo",telComer:"https://wa.me/5491132891559", tel:"011 3289-1559",direComercioGoogle:"https://maps.app.goo.gl/dFJ1t96TdUawKs9AA"}
+    {nameComer:"Las Nenas",direComercio:"Benjamín Matienzo",telComer:"https://wa.me/5491132891559", tel:"011 3289-1559",direComercioGoogle:"https://maps.app.goo.gl/dFJ1t96TdUawKs9AA"},
+    {nameComer:"Cabaña La Hilda",direComercio:"Rivadavia entre San Martín y almafuerte"}
   ]},
 
-    {nombreComercio:"Parrilla", datosComercio:
+    /*{nombreComercio:"Parrilla", datosComercio:
     [{nameComer:"La Parri Ya",direComercio:"F. Ameghino",direComercioGoogle:"https://goo.gl/maps/r1g16MJwuPHorAPi9", telComer:"https://wa.me/5491158764301"},
     {nameComer:"La Ponderosa",direComercio:"RP210 km 58",direComercioGoogle:"https://goo.gl/maps/Rf83WjDXsi1mEdXg7", telComer:"https://wa.me/5491132655251"}
-  ]},
+  ]},*/
 
     {nombreComercio:"Mercado mayorista", datosComercio:
     [{nameComer:"San Gerónimo",direComercio:"Ruta 210 y Pratts",telComer:"https://wa.me/5491133151845", tel:"11 3315 1845",direComercioGoogle:"https://maps.app.goo.gl/xaodGiwcpj5VkLJ98"}
@@ -30,7 +37,8 @@ export class ComerciosComponent implements OnInit {
     {nombreComercio:"Forrajeria y Mascotas", datosComercio:
     [{nameComer:"Forrajería Méndez",tel:"2224496248",direComercio:"Artigas y ",text:"Teniente Origone",direComercioGoogle:"https://maps.app.goo.gl/xNmtrLhnqTST4AES6", telComer:"https://wa.me/5492224496248"},
     {nameComer:"Forrajería La Huella",direComercio:"Av San Martín 119",direComercioGoogle:"https://maps.app.goo.gl/eeMXPgesz5dPY4hY9"},
-    {nameComer:"Guardería Canina Brisa",direComercio:"Echeverría 70",tel:"1168137111", telComer:"https://wa.me/5491168137111"}
+    {nameComer:"Guardería Canina Brisa",direComercio:"Echeverría 70",tel:"1168137111", telComer:"https://wa.me/5491168137111"},
+    {nameComer:"Criadero de perros Dot de Rides",direComercio:"Alte Brown 53 e/ Lavalle y Antártida Argentina",tel:"0222315429280"}
   ]},
 
 
@@ -52,7 +60,9 @@ export class ComerciosComponent implements OnInit {
 
 
     {nombreComercio:"Verdulería",datosComercio:
-    [{nameComer:"Verdulería Domselaar 1",direComercio:"Lavalle 373",direComercioGoogle:"https://g.page/Verduleriasdomselaar?share", telComer:"https://wa.me/5491138157189", tel:"1138157189"}]},
+    [{nameComer:"Verdulería Domselaar 1",direComercio:"Lavalle 373",direComercioGoogle:"https://g.page/Verduleriasdomselaar?share", telComer:"https://wa.me/5491138157189", tel:"1138157189"},
+    {nameComer:"Salmos 91",direComercio:"Manuel Belgrano 40", telComer:"https://wa.me/5491150106438", tel:"011 5010 6438"}
+  ]},
 
     {nombreComercio:"Carnicería",datosComercio:
     [{nameComer:"Alan",direComercio:"Avenida San Martín y Mitre",direComercioGoogle:"https://goo.gl/maps/j7S3UDrMPH6k7y6h7", telComer:"https://wa.me/5491158784335", tel:"1158784335"},
@@ -61,12 +71,14 @@ export class ComerciosComponent implements OnInit {
   ]},
 
 
-    {nombreComercio:"Bicicletería"},
+    //{nombreComercio:"Bicicletería"},
 
     {nombreComercio:"Perfumería y Artículos de limpieza",datosComercio:[{nameComer:"Las Lajas",direComercio:"Bartolomé Mitre 428",direComercioGoogle:"https://maps.app.goo.gl/fuRc5Uvz86LdiodN9", telComer:"https://wa.me/5492225402138", tel:"02225 40-2138"}] },
 
 
-    {nombreComercio:"Calzado e Indumentaria",datosComercio:[{nameComer:"Peperina Indumentaria Unisex",direComercio:"Av San Martín 332",direComercioGoogle:"https://maps.app.goo.gl/MDvpAd27PNmL9G9XA", telComer:"https://wa.me/5491150233396", tel:"01150233396"}]},
+    {nombreComercio:"Calzado e Indumentaria",datosComercio:[{nameComer:"Peperina Indumentaria Unisex",direComercio:"Av San Martín 332",direComercioGoogle:"https://maps.app.goo.gl/MDvpAd27PNmL9G9XA", telComer:"https://wa.me/5491150233396", tel:"01150233396"},
+    {nameComer:"Domselaar Calzados",direComercio:"Siena y Mario Bravo", telComer:"https://wa.me/5492224492706", tel:"02224 49-2706"}
+  ]},
 
 
     {nombreComercio:"Vivero", datosComercio:[{nameComer:"Vivero Bell Giardino",direComercio:"Alfonsina Storni y Prats",direComercioGoogle:"https://goo.gl/maps/Lv5n3eNWp4FKqQfe9", telComer:"https://wa.me/5491150133254", tel:"1150133254"},
@@ -95,11 +107,11 @@ export class ComerciosComponent implements OnInit {
     {nombreComercio:"Cerámica",datosComercio:[{nameComer:"DOMcerámicos",direComercio:"Belgrano Entre Mitre y Sarmiento",direComercioGoogle:"https://goo.gl/maps/RZ5HwkjAuc9JMq2A6", telComer:"https://wa.me/5491132710310", tel:"1132710310"}] },
 
 
-    {nombreComercio:"Pollería"},
-
+    {nombreComercio:"Pollería", datosComercio:[{nameComer:"Sapucai",direComercio:"RUTA 210,Km 56", tel:"02225-491800", telComer:"https://wa.me/5492225491800", imagenes:"https://res.cloudinary.com/sofiaschenone/image/upload/v1659474195/Domselaar/polleriasapucai_jgbxmz.jpg"}]},
+    /*
     {nombreComercio:"Garrafero"},
     {nombreComercio:"Matafuegos"},
-    {nombreComercio:"Repuestos de automotor"},
+    {nombreComercio:"Repuestos de automotor"},*/
 
 
     {nombreComercio:"Casa de Pezca", datosComercio:[{nameComer:"Lo de Bigote JD",direComercio:"RUTA 210, Pedro Peralta, 9 de Julio",direComercioGoogle:"https://g.page/LODEBIGOTEJDDOMSELAAR?share", telComer:"https://wa.me/5492223422203", tel:"2223422203"}]},
@@ -113,8 +125,8 @@ export class ComerciosComponent implements OnInit {
   ]},
 
 
-    {nombreComercio:"Gomería"},
-    {nombreComercio:"Lavadero de autos"},
+    //{nombreComercio:"Gomería"},
+      {nombreComercio:"Lavadero de autos", datosComercio:[{nameComer:"Natavale Lavadero",direComercio:"Güemes y Siena", direComercioGoogle:"https://goo.gl/maps/NftBxmrsLT4U433Q6"}]},
 
 
     {nombreComercio:"Lavadero de ropa", datosComercio:[
@@ -124,28 +136,40 @@ export class ComerciosComponent implements OnInit {
     ]},
 
 
-    {nombreComercio:"Peluquería",datosComercio:[{nameComer:"Peluquería Unisex",direComercio:"Chacabuco 113",direComercioGoogle:"https://goo.gl/maps/AMythynP1CTqv7bd6", telComer:"https://wa.me/5491122796775", tel:"1122796775"}]},
+    {nombreComercio:"Peluquería",datosComercio:[{nameComer:"Peluquería Unisex",direComercio:"Chacabuco 113",direComercioGoogle:"https://goo.gl/maps/AMythynP1CTqv7bd6", telComer:"https://wa.me/5491122796775", tel:"1122796775"},
+    {nameComer:"Facundo Coiffeeur",direComercio:"Bernardino Rivadavia y avenida San Martín"},
+    {nameComer:"Sara Soria Estilista",direComercio:"Chacabuco 413", tel:"011 5982-4073"}
+  ]},
 
     {nombreComercio:"Corralón",datosComercio:[{nameComer:"Moreno",direComercio:"AV. San Martín",direComercioGoogle:"https://goo.gl/maps/5Amj4LXaDNW2Yhev9", telComer:"https://wa.me/5491156463428", tel:"1156463428"},
-    {nameComer:"Domselaar", telComer:"https://wa.me/5492223461455", tel:"02223461455"}
+    {nameComer:"Domselaar", telComer:"https://wa.me/5492223461455", tel:"02223461455"},
+    {nameComer:"La Primavera", telComer:"https://wa.me/5492224545490", tel:"222 4545 490", direComercio:"Ruta 210 Km 51.5"}
 
   ]},
 
 
-    {nombreComercio:"Aseguradora"},
+    //{nombreComercio:"Aseguradora"},
 
     {nombreComercio:"Heladería",datosComercio:[{nameComer:"Un Lujo",direComercio:"Bernardino Rivadavia 12",direComercioGoogle:"https://goo.gl/maps/WKNjDSpHqJFEttAa7", telComer:"https://wa.me/5491159920871", tel:"1159920871"}]},
 
-    {nombreComercio:"Panadería"},
 
-    ///unir categorias de pizza y parrilla por comidas!!!!!!!/////
-    {nombreComercio:"Pizzería", datosComercio:[
-      {nameComer:"El Tata",direComercio:"Madrid 326",direComercioGoogle:"https://goo.gl/maps/PYikD8D8srmiRcYQ8", telComer:"https://wa.me/5491123643634 ", tel:"11-2364-3634"},
-      {nameComer:"Mi Pueblo",direComercio:"Bartolomé Mitre 252",direComercioGoogle:"https://goo.gl/maps/2FDJMoNAEuqrwKho7", telComer:"https://wa.me/5491133317549", tel:"1133317549"},
-    {nameComer:"El rey de la pizza", direComercio:"Teniente Origone",direComercioGoogle:"https://maps.app.goo.gl/NFVJhGcza1ESxobu8", telComer:"https://wa.me/5492223509280", tel:"2223509280"}
+
+
+    {nombreComercio:"Panadería", datosComercio:[{nameComer:"Ohlalá Panadería y Cafetería",direComercio:"Bernardino Rivadavia 4", tel:"02223 55 1624"},
+    {nameComer:"El Triunfo",direComercio:"Manuel Belgrano 22"}
   ]},
 
-    {nombreComercio:"Cervecería ",datosComercio:[{nameComer:"Sherlock",direComercio:"Bernardino Rivadavia",direComercioGoogle:"https://goo.gl/maps/dcGWimu5k6LwYNV69", telComer:"https://wa.me/5491126620781", tel:"1126620781"}]},
+
+  {nombreComercio:"Casas de Comidas",datosComercio:[
+    {nameComer:"Pizzería El Tata",direComercio:"Madrid 326",direComercioGoogle:"https://goo.gl/maps/PYikD8D8srmiRcYQ8", telComer:"https://wa.me/5491123643634 ", tel:"11-2364-3634"},
+    {nameComer:"Pizzería Mi Pueblo",direComercio:"Bartolomé Mitre 252",direComercioGoogle:"https://goo.gl/maps/2FDJMoNAEuqrwKho7", telComer:"https://wa.me/5491133317549", tel:"1133317549"},
+  {nameComer:"El rey de la pizza", direComercio:"Teniente Origone",direComercioGoogle:"https://maps.app.goo.gl/NFVJhGcza1ESxobu8", telComer:"https://wa.me/5492223509280", tel:"2223509280"},
+  //Parrillas
+  {nameComer:"La Parri Ya",direComercio:"F. Ameghino",direComercioGoogle:"https://goo.gl/maps/r1g16MJwuPHorAPi9", telComer:"https://wa.me/5491158764301"},
+    {nameComer:"Parrilla La Ponderosa",direComercio:"RP210 km 58",direComercioGoogle:"https://goo.gl/maps/Rf83WjDXsi1mEdXg7", telComer:"https://wa.me/5491132655251"},
+    {nameComer:"Parrilla Las Violetas",direComercio:"Ruta 210 km 54.900"},
+    {nameComer:"Cervecería Sherlock",direComercio:"Bernardino Rivadavia",direComercioGoogle:"https://goo.gl/maps/dcGWimu5k6LwYNV69", telComer:"https://wa.me/5491126620781", tel:"1126620781"}
+]},
 
 
     {nombreComercio:"Sodero ",datosComercio:[{nameComer:"Las 4 M (Esteban)",imagenes:"https://res.cloudinary.com/sofiaschenone/image/upload/v1658529694/Domselaar/agua_nuemzg.png",direComercio:"Florencio Sánchez 14",direComercioGoogle:"https://goo.gl/maps/Xmrn6pU5xB1BwLmP9", telComer:"https://wa.me/549115491161492507", tel:"54 9 11 6149-2507"}]}

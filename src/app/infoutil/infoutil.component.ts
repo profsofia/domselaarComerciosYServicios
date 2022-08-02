@@ -30,7 +30,7 @@ export class InfoutilComponent implements OnInit {
     {nombre:"Bomberos Voluntarios San Vicente Destacamento No. 2 Domselaar", dire:"Teniente Origone 130", direGoogle:"https://goo.gl/maps/ZSxdSvwCUCjrAdpJ6" },
     {nombre:"Refugio de animales"},
     {nombre:"Centro de Jubilados Esfuerzo y Voluntad", dire:"Ameghino 33"},
-    {nombre:"El fortín"},
+    {nombre:"El Fortín" , dire: "Maipú y Laprida"},
     {nombre:"Cajero Automático" , dire:"9 de Julio", direGoogle:"https://goo.gl/maps/nH3w3tp3jBEb3ZWR6"},
     {nombre:"Rapipago", dire:"Lavalle 592", direGoogle:"https://goo.gl/maps/NforTgyt5BkATCqy5", imagenes:"https://res.cloudinary.com/sofiaschenone/image/upload/v1658542439/Domselaar/rapi_c40sl2.jpg"},
     {nombre:"ANSES", telefono: "", dire:"9 de Julio 283", direGoogle:"https://goo.gl/maps/jbbNuZLpEeRkLBiB8"},
