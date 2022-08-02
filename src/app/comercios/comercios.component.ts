@@ -9,7 +9,7 @@ export class ComerciosComponent implements OnInit {
   comercios: any[] =[
     {nombreComercio:"Remís",
     datosComercio:[
-    { nameComer: 'Remís Domselaar', tel:"112224442977", telComer: 'https://wa.me/5492224442977', direComercio: "https://goo.gl/maps/PaXZ8mKTKJA21VCy5" },
+    { nameComer: 'Remís Domselaar', tel:"112224442977", telComer: 'https://wa.me/5492224442977' },
     { nameComer: 'Remís Seba Perro', tel:"+ 54 92224 54 7612", telComer: 'https://wa.me/5492224547612' },
     { nameComer: 'Remis Ds (Carlos)', tel:"+54 91167 924079", telComer: 'https://wa.me/5491167924079'},
     { nameComer: 'Marcos REMIS DOMSE', tel:"+54 9 11 4145-6515", telComer: 'https://wa.me/5491141456515' },
@@ -21,7 +21,7 @@ export class ComerciosComponent implements OnInit {
     [{nameComer:"El Diluvio",direComercio:"San Martín y Teniente Origone",direComercioGoogle:"https://maps.app.goo.gl/uf7GsHJCUZsatSzq5"},
     {nameComer:"Supermercado Wang",direComercio:"Av San Martín y Mitre",direComercioGoogle:"https://maps.app.goo.gl/WbXE3tbdeGRtnXtv9"},
     {nameComer:"Las Nenas",direComercio:"Benjamín Matienzo",telComer:"https://wa.me/5491132891559", tel:"011 3289-1559",direComercioGoogle:"https://maps.app.goo.gl/dFJ1t96TdUawKs9AA"},
-    {nameComer:"Cabaña La Hilda",direComercio:"Rivadavia entre San Martín y almafuerte"}
+    {nameComer:"Cabaña La Hilda",direComercio:"Rivadavia entre San Martín y almafuerte",direComercioGoogle:"https://goo.gl/maps/GRo5cHcRfioFdrmZ8"}
   ]},
 
     /*{nombreComercio:"Parrilla", datosComercio:
@@ -73,7 +73,9 @@ export class ComerciosComponent implements OnInit {
 
     //{nombreComercio:"Bicicletería"},
 
-    {nombreComercio:"Perfumería y Artículos de limpieza",datosComercio:[{nameComer:"Las Lajas",direComercio:"Bartolomé Mitre 428",direComercioGoogle:"https://maps.app.goo.gl/fuRc5Uvz86LdiodN9", telComer:"https://wa.me/5492225402138", tel:"02225 40-2138"}] },
+    {nombreComercio:"Perfumería y Artículos de limpieza",datosComercio:[{nameComer:"Las Lajas",direComercio:"Bartolomé Mitre 428",direComercioGoogle:"https://maps.app.goo.gl/fuRc5Uvz86LdiodN9", telComer:"https://wa.me/5492225402138", tel:"02225 40-2138"},
+    {nameComer:"Química Lore",direComercio:"Sargento Cabral Y Solís", tel:"222 3490 130"}
+  ] },
 
 
     {nombreComercio:"Calzado e Indumentaria",datosComercio:[{nameComer:"Peperina Indumentaria Unisex",direComercio:"Av San Martín 332",direComercioGoogle:"https://maps.app.goo.gl/MDvpAd27PNmL9G9XA", telComer:"https://wa.me/5491150233396", tel:"01150233396"},
@@ -111,7 +113,10 @@ export class ComerciosComponent implements OnInit {
     /*
     {nombreComercio:"Garrafero"},
     {nombreComercio:"Matafuegos"},
-    {nombreComercio:"Repuestos de automotor"},*/
+    */
+    {nombreComercio:"Repuestos de automotor", datosComercio:[{nameComer:"Repuestos Dionisio",direComercio:"Alberdi y Av San Martín", tel:"02224 15-49-5333"},
+    {nameComer:"Repuestos Micucci",direComercio:"Teniente Origone 259", tel:"54 2223 50-4143"}
+  ]},
 
 
     {nombreComercio:"Casa de Pezca", datosComercio:[{nameComer:"Lo de Bigote JD",direComercio:"RUTA 210, Pedro Peralta, 9 de Julio",direComercioGoogle:"https://g.page/LODEBIGOTEJDDOMSELAAR?share", telComer:"https://wa.me/5492223422203", tel:"2223422203"}]},
@@ -135,10 +140,17 @@ export class ComerciosComponent implements OnInit {
     }
     ]},
 
+    //asilo
+    {nombreComercio:"Hogar para ancianos", datosComercio:[
+      {nameComer:"Hogar Gallego para Ancianos", direComercio:"Mario Bravo y Sargento Cabral", tel:"02225 49-1194"
+    }
+    ]},
 
-    {nombreComercio:"Peluquería",datosComercio:[{nameComer:"Peluquería Unisex",direComercio:"Chacabuco 113",direComercioGoogle:"https://goo.gl/maps/AMythynP1CTqv7bd6", telComer:"https://wa.me/5491122796775", tel:"1122796775"},
+
+    {nombreComercio:"Belleza y Salud",datosComercio:[{nameComer:"Peluquería Unisex",direComercio:"Chacabuco 113",direComercioGoogle:"https://goo.gl/maps/AMythynP1CTqv7bd6", telComer:"https://wa.me/5491122796775", tel:"1122796775"},
     {nameComer:"Facundo Coiffeeur",direComercio:"Bernardino Rivadavia y avenida San Martín"},
-    {nameComer:"Sara Soria Estilista",direComercio:"Chacabuco 413", tel:"011 5982-4073"}
+    {nameComer:"Sara Soria Estilista",direComercio:"Chacabuco 413", tel:"011 5982-4073"},
+    {nameComer:"Modo Relax.",direComercio:"Mario Bravo 131", tel:"1138644292"}
   ]},
 
     {nombreComercio:"Corralón",datosComercio:[{nameComer:"Moreno",direComercio:"AV. San Martín",direComercioGoogle:"https://goo.gl/maps/5Amj4LXaDNW2Yhev9", telComer:"https://wa.me/5491156463428", tel:"1156463428"},

@@ -11,7 +11,7 @@ export class ServiciosComponent implements OnInit {
       nombre: 'Construcciones en general',
       datos: [
         { name: 'Javier',recomendacion:"(Muy Recomendado)", numero: '+54 9 2224 53-0472', tel:"https://wa.me/5492224530472"},
-        { name: 'Albañilería Domselaar',recomendacion:"(Julio Ponce)",img:"https://res.cloudinary.com/sofiaschenone/image/upload/v1658440347/Domselaar/bob_ozh1wy.jpg",dire:"Echeverría 250",numero:"11-26825874", tel: 'https://wa.me/5491126825874',direServicioEnGoogle:"https://goo.gl/maps/q8nytekz1Ps8cmwo6" },
+        { name: 'Albañilería Domselaar',parrafo:"(Julio Ponce)",img:"https://res.cloudinary.com/sofiaschenone/image/upload/v1658440347/Domselaar/bob_ozh1wy.jpg",dire:"Echeverría 250",numero:"11-26825874", tel: 'https://wa.me/5491126825874',direServicioEnGoogle:"https://goo.gl/maps/q8nytekz1Ps8cmwo6" },
         { name: 'Gustavo',numero:"11-5978 3051", tel: 'https://wa.me/5491159783051' },
         { name: 'Tierra Domselaar (Ricardo)',dire:'Chaco 485',numero:"+54 9 11 3560-4259", tel: 'https://wa.me/5491135604259', img:"https://res.cloudinary.com/sofiaschenone/image/upload/v1659473979/Domselaar/tierrasdomse_jokws9.jpg" }
       ],
@@ -22,12 +22,7 @@ export class ServiciosComponent implements OnInit {
         { name: 'Matías Pereyra (Moroco)',numero:"0222-4463920", tel: 'https://wa.me/5492224463920' }
       ],
     },
-    {
-      nombre: 'Pocero',
-      datos: [
-        { name: 'Javier',recomendacion:"(Muy Recomendado)", numero: '+54 9 2224 53-0472'},
-      ],
-    },
+
     //{ nombre: 'Jardinero', telefono: 'https//' },
     //{ nombre: 'Gasista', telefono: 'https//' },
     { nombre: 'Mecánico', datos: [
@@ -53,7 +48,10 @@ export class ServiciosComponent implements OnInit {
     //{ nombre: 'Pintor', telefono: 'https//' },
 
 
-    { nombre: 'Profesor particular', telefono: 'https//' },
+    { nombre: 'Profesor particular',   datos: [
+      { name: 'Alejandro De Luccas',dire:"Entr Ríos s/n", numero:"1166111507",tel: 'https://wa.me/5491166111507', parrafo:"Matemática, Química y Física"},
+      { name: 'Fernanda',parrafo:"Instituto de inglés",dire:"Rivadavia 118", numero:"11 2185 9882",tel: 'https://wa.me/5491121859882'}
+    ]},
     // { nombre: 'Masajista', telefono: 'https//' },
     //{ nombre: 'Empleada doméstica', telefono: 'https//' },
     //{ nombre: 'Niñera', telefono: 'https//' },
