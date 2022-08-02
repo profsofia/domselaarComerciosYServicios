@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InfoutilComponent implements OnInit {
   infoUtil: any[]=[
-    {nombre:"Comisaría", imagenes:"https://res.cloudinary.com/sofiaschenone/image/upload/v1658530903/Domselaar/IMG-20220721-WA0017_qiporr.jpg",telver:"02225491237",telefono:"https://wa.me/5492225491237", dire:"Manuel Belgrano", direGoogle:"https://goo.gl/maps/1wZq1CuqQEJbw1uQ9"},
+    {nombre:"Comisaría", imagenes:"https://res.cloudinary.com/sofiaschenone/image/upload/v1658530903/Domselaar/IMG-20220721-WA0017_qiporr.jpg",telver:"011 3619 1811",telefono:"https://wa.me/5491136191811", dire:"Manuel Belgrano", direGoogle:"https://goo.gl/maps/1wZq1CuqQEJbw1uQ9"},
 
     {nombre:"Sala de Primeros Auxilios Santa Clara",imagenes:"https://res.cloudinary.com/sofiaschenone/image/upload/v1658530909/Domselaar/IMG-20220721-WA0000_zrv7lt.jpg",telver:"02225491196",telefono:"https://wa.me/5492225491196", dire:"9 de Julio", direGoogle:"https://goo.gl/maps/SVRwEmz14FmHUYLE7"},
 
