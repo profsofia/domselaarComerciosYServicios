@@ -13,6 +13,8 @@ export class ServiciosComponent implements OnInit {
         { name: 'Javier',recomendacion:"(Muy Recomendado)", numero: '+54 9 2224 53-0472', tel:"https://wa.me/5492224530472"},
         { name: 'Albañilería Domselaar',parrafo:"(Julio Ponce)",img:"https://res.cloudinary.com/sofiaschenone/image/upload/v1658440347/Domselaar/bob_ozh1wy.jpg",dire:"Echeverría 250",numero:"11-26825874", tel: 'https://wa.me/5491126825874',direServicioEnGoogle:"https://goo.gl/maps/q8nytekz1Ps8cmwo6" },
         { name: 'Gustavo',numero:"11-5978 3051", tel: 'https://wa.me/5491159783051' },
+
+        { name: 'Perforaciones Ramos',numero:"1166471477", tel: 'https://wa.me/5491166471477' },
         { name: 'Tierra Domselaar (Ricardo)',dire:'Chaco 485',numero:"+54 9 11 3560-4259", tel: 'https://wa.me/5491135604259', img:"https://res.cloudinary.com/sofiaschenone/image/upload/v1659473979/Domselaar/tierrasdomse_jokws9.jpg" }
       ],
     },
@@ -24,14 +26,20 @@ export class ServiciosComponent implements OnInit {
     },
 
     //{ nombre: 'Jardinero', telefono: 'https//' },
-    //{ nombre: 'Gasista', telefono: 'https//' },
+    { nombre: 'Gasista', datos: [
+      { name: 'Domselaar Gas',numero: "11 6512 8478", tel: 'https://wa.me/5491165128478'}]},
+
+
+
     { nombre: 'Mecánico', datos: [
       { name: 'Cristian Corigliano',recomendacion:"(Muy Recomendado)",img:"https://res.cloudinary.com/sofiaschenone/image/upload/v1658280763/Domselaar/WhatsApp_Image_2022-07-19_at_3.46.05_PM_1_njhecx.jpg",dire:"La plata 462", tel: 'https://wa.me/5491140492204',direServicioEnGoogle:"https://goo.gl/maps/zcFPJAbDkcMWPdv96" },
       { name: "Reparación de frenos y embragues Domselaar",dire:"Ruta 210 Km 56.200",numero:"011 4960-6170" }
     ]},
     //{ nombre: 'Bicicletero', telefono: 'https//' },
     { nombre: 'Refrigeración', datos: [
-      { name: 'Refrigeración Daniel G', tel: 'https://wa.me/5491128422070' }
+      { name: 'Refrigeración Daniel G', tel: 'https://wa.me/5491128422070', numero:"11 2842 2070" },
+      { name: 'Refrigeración Moreyra', tel: 'https://wa.me/5491161985915', numero:"11 6198 5915" },
+      { name: 'Refrigeración Bajo Cero', tel: 'https://wa.me/5491124418553', numero:"11 2441 8553", dire:"Av San Martín y Origone" }
     ]},
     //{ nombre: 'Carpintero', telefono: 'https//' },
 
@@ -61,16 +69,22 @@ export class ServiciosComponent implements OnInit {
       {name:"Joel", numero:" 11 6670 5067", tel:"https://wa.me/5491166705067"},
       { name: 'Del Sol', tel: '', dire: 'Manuel Belgrano',text:"y Teniente Origone", direServicioEnGoogle:"https://goo.gl/maps/AqxzFqVcNyHh8cgv6"}
     ]},
-    { nombre: 'Estudio Jurídico', datos: [
+
+
+    { nombre: 'Estudio Jurídico y Aseguradora', datos: [
       { name: 'Marcela Liliana Ramírez', parrafo:"Abogada especialista en cuestiones de Familia.", numero:"11-57956492",tel:"https://wa.me/5491157956492", dire:'Calle Córdoba 225', direServicioEnGoogle:"https://goo.gl/maps/LHnC5ryAZ2tW3dAU6"},
       { name: 'Estudio Jurídico Cabral y Asociados', numero:"11-6426-84300",tel:"https://wa.me/54911642684300", dire:'Storni 123', direServicioEnGoogle:"https://goo.gl/maps/AqxzFqVcNyHh8cgv6"},
-      { name: 'Estudio Jurídico Curas, Antoniszyn & Asociados', numero:"11-5751 9164",tel:"https://wa.me/5491157519164"}
+      { name: 'Estudio Jurídico Curas, Antoniszyn & Asociados', numero:"11-5751 9164",tel:"https://wa.me/5491157519164"},
+      { name: 'Estudio Integral Mozotegui y Palome', numero:"11 4031 2593",tel:"https://wa.me/5491140312593"},
+      { name: 'Seguros Protego',parrafo:"Luciano Alfonzo Garro", numero:"11 3330 4659",tel:"https://wa.me/5491133304659", dire:"Teniente Origone 245", img:"https://res.cloudinary.com/sofiaschenone/image/upload/v1659549426/Domselaar/seguro_kalv7g.jpg"}
     ]},
 
 
-    /*{nombre:"Seguridad Privada", datos:[
-      {name:"Alejandro Amaya", dire:"Ameghino 440", direServicioEnGoogle:"https://goo.gl/maps/QtWNXUdJttUUz39u7", numero:"1138630377",tel:"https://wa.me/5491138630377" }
-    ]}*/
+    { nombre: 'Reparaciones de PC', datos: [
+      { name: 'Servicio Técnico', parrafo:"Domselaar net", numero:"11 5052 4885",tel:"https://wa.me/5491150524885", dire:'Av San Martín'}
+    ]},
+
+
 
   ];
   valoresOrdenados: any[] = [];
