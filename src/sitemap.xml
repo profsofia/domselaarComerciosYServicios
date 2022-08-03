@@ -7,5 +7,23 @@
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
+  <url>
+    <loc>https://domselaarcomerciosyservicios.web.app/servicios</loc>
+    <lastmod>2022-08-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.8</priority>
+  </url>
+  <url>
+    <loc>https://domselaarcomerciosyservicios.web.app/comercios</loc>
+    <lastmod>2022-08-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.8</priority>
+  </url>
+  <url>
+    <loc>https://domselaarcomerciosyservicios.web.app/infoutil</loc>
+    <lastmod>2022-08-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.8</priority>
+  </url>
 </urlset>
 <!--Created using XmlSitemapGenerator.org - Free HTML, RSS and XML sitemap generator-->
