@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./servicios.component.css'],
 })
 export class ServiciosComponent implements OnInit {
+  activeState: boolean[] = [true, false, false];
+
   listaServ: any[] = [
     {
       nombre: 'Construcciones en general',
@@ -102,4 +104,7 @@ export class ServiciosComponent implements OnInit {
     });
     this.valoresOrdenados;
   }
+  toggle(index: number) {
+    this.activeState[index] = !this.activeState[index];
+}
 }

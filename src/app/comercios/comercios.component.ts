@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./comercios.component.css']
 })
 export class ComerciosComponent implements OnInit {
+  activeState: boolean[] = [true, false, false];
   comercios: any[] =[
     {nombreComercio:"Remís",
     datosComercio:[
@@ -127,8 +128,10 @@ export class ComerciosComponent implements OnInit {
     {nameComer:"Estilo Campo",direComercio:"Laprida 138"},
     {nameComer:"Los Chicos",direComercio:"Belgrano y Origone"}
   ]},
+
+    {nombreComercio:"Garrafero",  datosComercio:[{nameComer:"DI-MI-GAS", tel:"15 3519 7847"}]
+  },
     /*
-    {nombreComercio:"Garrafero"},
     {nombreComercio:"Matafuegos"},
     */
     {nombreComercio:"Todo automotor", datosComercio:[{nameComer:"Repuestos Dionisio",direComercio:"Alberdi y Av San Martín", tel:"02224 15-49-5333"},
@@ -171,6 +174,7 @@ export class ComerciosComponent implements OnInit {
 
     {nombreComercio:"Belleza y Salud",datosComercio:[{nameComer:"Peluquería Unisex",direComercio:"Chacabuco 113",direComercioGoogle:"https://goo.gl/maps/AMythynP1CTqv7bd6", telComer:"https://wa.me/5491122796775", tel:"1122796775"},
     {nameComer:"Facundo Coiffeeur",direComercio:"Bernardino Rivadavia y avenida San Martín"},
+    {nameComer:"Peluquería Anabella Pelu!",direComercio:"Chacabuco 113", tel:"011 2279 6775"},
     {nameComer:"Sara Soria Estilista",direComercio:"Chacabuco 413", tel:"011 5982-4073"},
     {nameComer:"Modo Relax.",direComercio:"Mario Bravo 131", tel:"1138644292"}
   ]},
@@ -185,7 +189,9 @@ export class ComerciosComponent implements OnInit {
 
     //{nombreComercio:"Aseguradora"},
 
-    {nombreComercio:"Heladería",datosComercio:[{nameComer:"Un Lujo",direComercio:"Bernardino Rivadavia 12",direComercioGoogle:"https://goo.gl/maps/WKNjDSpHqJFEttAa7", telComer:"https://wa.me/5491159920871", tel:"1159920871"}]},
+    {nombreComercio:"Heladería",datosComercio:[{nameComer:"Un Lujo",direComercio:"Bernardino Rivadavia 12",direComercioGoogle:"https://goo.gl/maps/WKNjDSpHqJFEttAa7", telComer:"https://wa.me/5491159920871", tel:"1159920871"},
+    {nameComer:"Helados Arti", parrafo:"Solo Delivery", telComer:"https://wa.me/5492223679497", tel:"222 367 9497"}
+  ]},
 
 
 
@@ -236,5 +242,8 @@ export class ComerciosComponent implements OnInit {
     });
     this.comerciosOrdenados;
   }
+  toggle(index: number) {
+    this.activeState[index] = !this.activeState[index];
+}
 
 }

@@ -3,31 +3,41 @@
   <h2 class="display-5 fw-bold text-white">Comercios</h2>
   <div class="row g-col-4 py-5 row-cols-1 row-cols-sm-2 row-cols-lg-3">
     <div class="feature col text-white" *ngFor="let item of comerciosOrdenados">
+      <p-accordion>
+        <p-accordionTab
+        [(selected)]="activeState[item.nombreComercio]"
+        header="{{ item.nombreComercio }}">
 
-      <h2>{{item.nombreComercio}}</h2>
-      <div class="dropdown">
-        <button class="btn btn-outline-info btn-lg px-4 fw-bold dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-          Ver todos
-        </button>
-        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-          <li *ngFor="let i of item.datosComercio" class="dropdown-item" width="380px;">
-            <img class="rounded-circle" height="150px" width="150px" *ngIf="i.imagenes" src="{{i.imagenes}}" alt="imagen mecánico domselaar">
-            <h4 class="text-dark">
-              {{i.nameComer}}
-            </h4>
-            <p class="fs-6">{{i.parrafo}}</p>
-            <p class="text-dark fs-6 p-0 m-0" *ngIf="i.tel">{{i.tel}}</p>
-              <a *ngIf="i.telComer" class="btn-outline-info btn-lg p-0 m-0" href="{{i.telComer}}"><i class="pi pi-whatsapp"  target="_blank" style="font-size: 1.2rem"></i> Teléfono</a>
-               <br/>
-            <a class="btn-outline-info p-0 m-0" href="{{i.direComercioGoogle}}" target="_blank" style="font-size: 1.6rem">
-              <p class="fs-6" *ngIf="i.direComercio" style="font-size: 1.4rem"><i class="pi pi-map-marker" style="font-size: 1.4rem"></i>{{i.direComercio}}</p>
-            </a>
-            <p class="fs-6" *ngIf="i.text" style="font-size: 1.4rem">{{i.text}}</p>
-            <hr/>
-          </li>
-        </ul>
-      </div>
+                <p-card
+                *ngFor="let i of item.datosComercio"
+                  header="{{ i.nameComer }}"
+                  subheader="{{i.parrafo}}"
+                >
+                  <ng-template pTemplate="header">
+                    <img alt="imagenes comercios"
+                    *ngIf="i.imagenes"
+                    src="{{ i.imagenes }}" />
+                  </ng-template>
+                  <ng-template pTemplate="footer">
+                    <p>Dirección: {{i.direComercio}}</p>
+                    <p>Teléfono: {{i.tel}}</p>
+                    <a *ngIf="i.direComercioGoogle" href="{{i.direComercioGoogle}}" target="_blank">
+                    <p-button label="{{i.direComercio}}" icon="pi pi-map-marker"></p-button>
+                  </a>
+                    <a href="{{i.telComer}}" target="_blank">
+                    <p-button
+                    *ngIf="i.telComer"
+                      label="Contactar"
+                      icon="pi pi-whatsapp"
+                      styleClass="p-button-secondary"
+                      [style]="{ 'margin-left': '.5em' }"
+                    ></p-button>
+                  </a>
+                  </ng-template>
+                </p-card>
+          <p-button [icon]="activeState[item.nombreComercio] ? 'pi pi-times' : 'pi pi-plus'" (click)="toggle(item.nombreComercio)" styleClass="p-button-text" label="Cerrar {{item.nombreComercio}}"></p-button>
+        </p-accordionTab>
+      </p-accordion>
     </div>
   </div>
 </div>
-

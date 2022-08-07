@@ -4,32 +4,45 @@
   <div class="row g-4 py-5 row-cols-1 row-cols-sm-2  row-cols-lg-3">
 
     <div class="col d-flex align-items-start text-white" *ngFor="let n of valoresOrdenados">
-        <div>
-          <h2>{{n.nombre}}</h2>
-        <div class="dropdown" >
-          <button class="btn btn-outline-info btn-lg px-4 me-sm-3 fw-bold dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-            Ver todos
-          </button>
-          <ul class="dropdown-menu bg-dark text-white" aria-labelledby="dropdownMenuButton1">
-            <li *ngFor="let i of n.datos" class="dropdown-item bg-dark text-white">
-              <img class="rounded-circle" height="150px" width="150px" *ngIf="i.img" src="{{i.img}}" alt="imagen mecánico domselaar">
-              <h5 class="bg-dark text-white">
-                {{i.name}} <br>
-                <p class="fs-6 p-0 m-0" *ngIf="i.parrafo">{{i.parrafo}}</p>
-                <p *ngIf="i.recomendacion"> <i class="pi pi-star-fill"><i class="pi pi-star-fill"></i><i class="pi pi-star-fill"></i><i class="pi pi-star-fill"></i><i class="pi pi-star-fill"></i> {{i.recomendacion}}</i></p>
-              </h5>
-              <h5 class="bg-dark text-white fs-6" *ngIf="i.numero">{{i.numero}}</h5>
-                <a *ngIf="i.tel" class="btn-outline-info btn-lg fs-6" href="{{i.tel}}"><i class="pi pi-whatsapp"  target="_blank" style="font-size: 1.5rem"></i> Teléfono</a>
-                <a class="fs-6 btn-outline-info btn-lg" *ngIf="i.direServicioEnGoogle" href="{{i.direServicioEnGoogle}}" target="_blank" icon="pi pi-map-marker" style="font-size: 1.7rem">
-                  <i class="pi pi-map-marker" style="font-size: 1.4rem">{{i.dire}}</i>
-                  <br>
-                    <p  *ngIf="i.text" style="font-size: 1.4rem"> {{i.text}}</p>
-                </a>
-                <hr>
-            </li>
-          </ul>
-        </div>
-        </div>
+      <p-accordion>
+        <p-accordionTab
+        [(selected)]="activeState[n.nombre]"
+        header="{{ n.nombre }}">
+
+                <p-card
+                *ngFor="let i of n.datos"
+                  header="{{ i.name }}"
+                  subheader="{{i.recomendacion}}"
+                >
+                  <ng-template pTemplate="header">
+                    <img
+                    style="max-width:10rem; max-height: 10rem;"
+                    class="mx-5 rounded-circle img-fluid"
+                    alt="imagenes servicios"
+                    *ngIf="i.img"
+                    src="{{ i.img }}" />
+                  </ng-template>
+                  <ng-template pTemplate="footer">
+                    <p *ngIf="i.parrafo">{{i.parrafo}}</p>
+                    <p *ngIf="i.dire">Dirección: {{i.dire}}</p>
+                    <p *ngIf="i.numero">Teléfono: {{i.numero}}</p>
+                    <a *ngIf="i.direServicioEnGoogle" href="{{i.direServicioEnGoogle}}" target="_blank">
+                    <p-button label="{{i.dire}}" icon="pi pi-map-marker"></p-button>
+                  </a>
+                    <a href="{{i.tel}}" target="_blank">
+                    <p-button
+                    *ngIf="i.numero"
+                      label="Contactar"
+                      icon="pi pi-whatsapp"
+                      styleClass="p-button-secondary"
+                      [style]="{ 'margin-left': '.5em' }"
+                    ></p-button>
+                  </a>
+                  </ng-template>
+                </p-card>
+          <p-button [icon]="activeState[n.nombre] ? 'pi pi-times' : 'pi pi-plus'" (click)="toggle(n.nombre)" styleClass="p-button-text" label="Cerrar {{n.nombre}}"></p-button>
+        </p-accordionTab>
+      </p-accordion>
 
     </div>
   </div>
