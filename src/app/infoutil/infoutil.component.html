@@ -8,9 +8,11 @@
 <div class="container">
   <div class="row">
     <div class="col-md-4 py-2 " *ngFor="let info of infoUtilOrdenada">
-      <div class="card" style="height:535px;">
+      <div class="card" style="height:535px;"  data-aos="fade-up" data-aos-duration="1000">
         <img
           class="card-img-top"
+          data-aos="flip-left"
+          data-aos-duration="1500"
           style="max-width: 500px; max-height: 250px;"
           *ngIf="info.imagenes"
           src="{{ info.imagenes }}"

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import * as AOS from 'aos';
 
 @Component({
   selector: 'app-infoutil',
@@ -72,6 +73,8 @@ export class InfoutilComponent implements OnInit {
       }
     });
     this.infoUtilOrdenada;
+    AOS.init();
+    window.addEventListener('load', AOS.refresh);
   }
 
 }
