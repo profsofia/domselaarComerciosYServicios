@@ -24,7 +24,8 @@ export class ComerciosComponent implements OnInit {
     {nameComer:"Supermercado Wang",direComercio:"Av San Martín y Mitre",direComercioGoogle:"https://maps.app.goo.gl/WbXE3tbdeGRtnXtv9"},
     {nameComer:"Las Nenas",direComercio:"Benjamín Matienzo",telComer:"https://wa.me/5491132891559", tel:"011 3289-1559",direComercioGoogle:"https://maps.app.goo.gl/dFJ1t96TdUawKs9AA"},
     {nameComer:"Cabaña La Hilda",direComercio:"Rivadavia entre San Martín y almafuerte",direComercioGoogle:"https://goo.gl/maps/GRo5cHcRfioFdrmZ8"},
-    {nameComer:"El Gauchito",direComercio:"Mario bravo y Laprida"}
+    {nameComer:"El Gauchito",direComercio:"Mario bravo y Laprida"},
+    {nameComer:"Almacén Utt Domselaar",direComercio:"Av San Martín 365"}
   ]},
 
     /*{nombreComercio:"Parrilla", datosComercio:
@@ -66,7 +67,9 @@ export class ComerciosComponent implements OnInit {
       {nameComer:"La Diferencia",direComercio:"Laprida 80", telComer:"https://wa.me/5491127708750", tel:"11 2770 8750"},
       {nameComer:"Verdulería Domselaar 1",direComercio:"Lavalle 373",direComercioGoogle:"https://g.page/Verduleriasdomselaar?share", telComer:"https://wa.me/5491138157189", tel:"1138157189"},
     {nameComer:"Salmos 91",direComercio:"Manuel Belgrano 40", telComer:"https://wa.me/5491150106438", tel:"011 5010 6438"},
-    {nameComer:"La esquina",direComercio:"Av San Martín y Rivadavia"}
+    {nameComer:"La esquina",direComercio:"Av San Martín y Rivadavia"},
+    {nameComer:"Verdulería Domselaar",tel:"222 4544 565", telComer:"https://wa.me/5492224544565", direComercio:"Alte Brown 652"}
+
   ]},
 
     {nombreComercio:"Carnicería",datosComercio:
@@ -91,11 +94,13 @@ export class ComerciosComponent implements OnInit {
   ]},
 
 
-    {nombreComercio:"Vivero", datosComercio:[{nameComer:"Vivero Bell Giardino",direComercio:"Alfonsina Storni y Prats",direComercioGoogle:"https://goo.gl/maps/Lv5n3eNWp4FKqQfe9", telComer:"https://wa.me/5491150133254", tel:"1150133254"},
+    {nombreComercio:"Plantas y Jardín", datosComercio:[{nameComer:"Vivero Bell Giardino",direComercio:"Alfonsina Storni y Prats",direComercioGoogle:"https://goo.gl/maps/Lv5n3eNWp4FKqQfe9", telComer:"https://wa.me/5491150133254", tel:"1150133254"},
 
     {nameComer:"Macetas Villalba Domselaar",direComercio:"Chacabuco 846",direComercioGoogle:"https://goo.gl/maps/gY7P8a9YH9Ygbwcw8", telComer:"https://wa.me/5491150368315", tel:"11 5036 8315"},
 
-    {nameComer:"Vivero El Tano Bondiola",direComercio:"Lavalle",direComercioGoogle:"https://goo.gl/maps/SSqLPwEYNcSNepAE9", telComer:"https://wa.me/5491127433116", tel:"1127433116"}
+    {nameComer:"Vivero El Tano Bondiola",direComercio:"Lavalle",direComercioGoogle:"https://goo.gl/maps/SSqLPwEYNcSNepAE9", telComer:"https://wa.me/5491127433116", tel:"1127433116"},
+
+    {nameComer:"Tierra de Colores (Macetas)",direComercio:"Ruta 210 km 51.800", telComer:"https://wa.me/5491122442999", tel:"011 2244 2999"}
   ]},
 
 
@@ -205,6 +210,8 @@ export class ComerciosComponent implements OnInit {
     {nameComer:"Pizzería El Tata",direComercio:"Madrid 326",direComercioGoogle:"https://goo.gl/maps/PYikD8D8srmiRcYQ8", telComer:"https://wa.me/5491123643634 ", tel:"11-2364-3634"},
     {nameComer:"Pizzería Mi Pueblo",direComercio:"Bartolomé Mitre 252",direComercioGoogle:"https://goo.gl/maps/2FDJMoNAEuqrwKho7", telComer:"https://wa.me/5491133317549", tel:"1133317549"},
   {nameComer:"El rey de la pizza", direComercio:"Teniente Origone",direComercioGoogle:"https://maps.app.goo.gl/NFVJhGcza1ESxobu8", telComer:"https://wa.me/5492223509280", tel:"2223509280"},
+  {nameComer:"Comidas A lo Mac Domselaar", telComer:"https://wa.me/5491122501931", tel:"1122501931"},
+  {nameComer:"Domselaar Hamburguesa Los Seis", telComer:"https://wa.me/5491169185186", tel:"1169185186", direComercio:"Azcuenaga 1163"},
   //Parrillas
   {nameComer:"La Parri Ya",direComercio:"F. Ameghino",direComercioGoogle:"https://goo.gl/maps/r1g16MJwuPHorAPi9", telComer:"https://wa.me/5491158764301"},
     {nameComer:"Parrilla La Ponderosa",direComercio:"RP210 km 58",direComercioGoogle:"https://goo.gl/maps/Rf83WjDXsi1mEdXg7", telComer:"https://wa.me/5491132655251"},

@@ -41,14 +41,16 @@ export class ServiciosComponent implements OnInit {
     { nombre: 'Refrigeración', datos: [
       { name: 'Refrigeración Daniel G', tel: 'https://wa.me/5491128422070', numero:"11 2842 2070" },
       { name: 'Refrigeración Moreyra', tel: 'https://wa.me/5491161985915', numero:"11 6198 5915" },
-      { name: 'Refrigeración Bajo Cero', tel: 'https://wa.me/5491124418553', numero:"11 2441 8553", dire:"Av San Martín y Origone" }
+      { name: 'Refrigeración Bajo Cero', tel: 'https://wa.me/5491124418553', numero:"11 2441 8553", dire:"Av San Martín y Origone" },
+      { name: 'Tango Refrigeración', tel: 'https://wa.me/5491126508631', numero:"11 2650 8631", dire:"Entre Ríos 75" }
     ]},
     //{ nombre: 'Carpintero', telefono: 'https//' },
 
 
     { nombre: 'Herrero',  datos: [
       { name: 'Herrería Moncho',dire:"Ruta 210km 55", numero:"1154155785",tel: 'https://wa.me/5491154155785' },
-    {name:"Fabian Ponzo", numero:"1138807867", tel:"https://wa.me/5491138807867"}
+    {name:"Fabian Ponzo", numero:"1138807867", tel:"https://wa.me/5491138807867"},
+    {name:"Herrería Gustavo", numero:"222 3429 781", tel:"https://wa.me/5492223429781"}
     ]},
 
 
@@ -70,6 +72,11 @@ export class ServiciosComponent implements OnInit {
     { nombre: 'Veterinario',datos: [
       {name:"Joel", numero:" 11 6670 5067", tel:"https://wa.me/5491166705067"},
       { name: 'Del Sol', tel: '', dire: 'Manuel Belgrano',text:"y Teniente Origone", direServicioEnGoogle:"https://goo.gl/maps/AqxzFqVcNyHh8cgv6"}
+    ]},
+
+    //cerrajería
+    { nombre: 'Cerrajería',datos: [
+      {name:"Cerrajería Pablo", numero:"011 48701803", tel:"https://wa.me/5491148701803"}
     ]},
 
 

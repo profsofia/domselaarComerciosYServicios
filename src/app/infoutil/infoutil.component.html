@@ -8,24 +8,17 @@
 <div class="container">
   <div class="row">
     <div class="col-md-4 py-2 " *ngFor="let info of infoUtilOrdenada">
-      <div class="card" style="height:520px;">
+      <div class="card" style="height:535px;">
         <img
           class="card-img-top"
-          style="max-width: 540px; max-height: 300px;"
+          style="max-width: 500px; max-height: 250px;"
           *ngIf="info.imagenes"
           src="{{ info.imagenes }}"
           alt="Card image cap"
         />
         <div class="card-body">
           <h5 class="card-title">{{ info.nombre }}</h5>
-          <p class="card-text" *ngIf="info.telver">{{ info.telver }}</p>
-          <a
-            href="{{ info.direGoogle }}"
-            class="btn btn-outline-info btn-lg px-4 me-3 my-3 fw-bold"
-          >
-            <i class="pi pi-map-marker" style="font-size: 1.4rem"></i>
-            {{ info.dire }}
-          </a>
+          <p class="card-text" *ngIf="info.telver"><i class="pi pi-phone" style="font-size: .9rem"></i> {{ info.telver }}</p>
           <a
           *ngIf="info.telefono"
             href="{{ info.telefono }}"
@@ -33,6 +26,16 @@
           >
             <i class="pi pi-phone" style="font-size: 1.4rem"></i> Teléfono</a
           >
+
+        </div>
+        <div class="card-footer" *ngIf="info.direGoogle">
+          <a
+          href="{{ info.direGoogle }}"
+          class="btn btn-outline-info btn-lg px-4 me-3 my-3 fw-bold"
+        >
+          <i class="pi pi-map-marker" style="font-size: 1.4rem"></i>
+          {{ info.dire }}
+        </a>
         </div>
       </div>
     </div>
