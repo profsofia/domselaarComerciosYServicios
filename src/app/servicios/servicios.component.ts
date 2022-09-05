@@ -15,7 +15,7 @@ export class ServiciosComponent implements OnInit {
         { name: 'Albañilería Javier',recomendacion:"(Muy Recomendado)", numero: '+54 9 2224 53-0472', tel:"https://wa.me/5492224530472"},
         { name: 'Albañilería Domselaar',parrafo:"(Julio Ponce)",img:"https://res.cloudinary.com/sofiaschenone/image/upload/v1658440347/Domselaar/bob_ozh1wy.jpg",dire:"Echeverría 250",numero:"11-26825874", tel: 'https://wa.me/5491126825874',direServicioEnGoogle:"https://goo.gl/maps/q8nytekz1Ps8cmwo6" },
         { name: 'Albañilería Gustavo',numero:"11-5978 3051", tel: 'https://wa.me/5491159783051' },
-
+        { name: 'Tu Sueño Construcciones',numero:"11-3826 2843", tel: 'https://wa.me/5491138262843' },
         { name: 'Perforaciones Ramos',numero:"1166471477", tel: 'https://wa.me/5491166471477' },
         { name: 'Tierra Domselaar (Ricardo)',dire:'Chaco 485',numero:"+54 9 11 3560-4259", tel: 'https://wa.me/5491135604259', img:"https://res.cloudinary.com/sofiaschenone/image/upload/v1659473979/Domselaar/tierrasdomse_jokws9.jpg" }
       ],
@@ -70,8 +70,7 @@ export class ServiciosComponent implements OnInit {
 
 
     { nombre: 'Veterinario',datos: [
-      {name:"Joel", numero:" 11 6670 5067", tel:"https://wa.me/5491166705067"},
-      { name: 'Del Sol', tel: '', dire: 'Manuel Belgrano',text:"y Teniente Origone", direServicioEnGoogle:"https://goo.gl/maps/AqxzFqVcNyHh8cgv6"}
+      {name:"Joel", numero:" 11 6670 5067", tel:"https://wa.me/5491166705067"}
     ]},
 
     //cerrajería
