@@ -57,7 +57,9 @@ export class ServiciosComponent implements OnInit {
 
     //{ nombre: 'Plomero', telefono: 'https//' },
     //{ nombre: 'Ceramísta', telefono: 'https//' },
-    //{ nombre: 'Pintor', telefono: 'https//' },
+    { nombre: 'Pintor',datos:[
+      {name: 'Alejandro', recomendacion:'Pintura, enduído, durlock, reparaciones, placas antihumedad. Presupuesto sin cargo.', numero: '11 66 111 507', tel:'https://wa.me/5491166111507'}
+    ]},
 
 
     { nombre: 'Profesor particular',   datos: [
